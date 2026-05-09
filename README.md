@@ -66,6 +66,15 @@ WooCommerce-плагін для української доставки **Нов
 - **wp.org публікація** — потребує brand-assets (icon, banner, screenshots).
 - **Pre-warm street cache** для top-10 міст (зараз on-demand через API).
 
+## 📖 Документація
+
+| Файл | Для кого |
+|---|---|
+| [docs/INSTALLATION.md](docs/INSTALLATION.md) | Магазин-адміни — крок-за-кроком установка та налаштування |
+| [docs/INTEGRATION.md](docs/INTEGRATION.md) | Розробники — meta keys, hooks, AJAX endpoints, code examples (CRM/SMS) |
+| [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) | Типові проблеми та рішення |
+| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Огляд архітектури, data flow, design decisions |
+
 ## Технічні вимоги
 
 - PHP 8.1+

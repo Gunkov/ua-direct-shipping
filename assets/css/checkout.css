@@ -1,0 +1,124 @@
+.uads-shipping-selector {
+    margin: 1em 0 0.5em;
+    padding: 1em;
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+}
+.uads-shipping-selector .uads-selector-title {
+    margin: 0 0 0.6em 0;
+    font-size: 1.05em;
+}
+.uads-shipping-selector .uads-method-option {
+    display: block;
+    padding: 8px 10px;
+    margin-bottom: 4px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+}
+.uads-shipping-selector .uads-method-option:hover {
+    border-color: #aaa;
+}
+.uads-shipping-selector .uads-method-option:has(input:checked) {
+    border-color: #2271b1;
+    background: #f0f6fc;
+}
+.uads-shipping-selector input[type="radio"] {
+    margin-right: 8px;
+}
+
+/* Hide WC native shipping methods row in order review when our selector is up. */
+body.uads-np-active .woocommerce-checkout-review-order tr.shipping,
+body.uads-np-active .shop_table tr.shipping,
+body.uads-np-active #shipping_method,
+/* Hide "Ship to a different address?" toggle and the secondary shipping fields it expands */
+body.uads-np-active #ship-to-different-address,
+body.uads-np-active .woocommerce-shipping-fields,
+body.uads-np-active #shiptodifferentaddress-checkbox-label,
+body.uads-np-active #ship-to-different-address-checkbox {
+    display: none !important;
+}
+
+/* Email — приховати зірочку required коли наш метод обраний */
+body.uads-np-active label[for="billing_email"] abbr.required,
+body.uads-np-active label[for="billing_email"] .required {
+    display: none !important;
+}
+
+/* Middle name — завжди приховати "(optional)" текст; required-зірочку керує JS */
+#billing_middle_name_field label .optional,
+#billing_middle_name_field label > span.optional {
+    display: none !important;
+}
+
+.uads-checkout-fields {
+    margin: 0.5em 0 1em;
+    padding: 1em;
+    background: #fafafa;
+    border-radius: 4px;
+}
+.uads-checkout-fields .uads-row {
+    display: block;
+}
+.uads-checkout-fields .uads-field {
+    margin-bottom: 1em;
+}
+.uads-checkout-fields .select2-container {
+    width: 100% !important;
+}
+.uads-checkout-fields .uads-loading {
+    text-align: center;
+    color: #666;
+}
+
+/* Shipping methods radio polish — make selection prominent and descriptions visible */
+ul#shipping_method li {
+    padding: 12px 14px;
+    margin: 0 0 8px 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background: #fff;
+    transition: border-color 0.15s, background 0.15s;
+}
+ul#shipping_method li:hover {
+    border-color: #aaa;
+    background: #fafafa;
+}
+ul#shipping_method li:has(input:checked) {
+    border-color: #2271b1;
+    background: #f0f6fc;
+}
+ul#shipping_method label {
+    font-weight: 500;
+    cursor: pointer;
+}
+ul#shipping_method input[type="radio"] {
+    margin-right: 8px;
+}
+.uads-method-description {
+    display: block;
+    margin-top: 4px;
+    color: #666;
+    font-weight: 400;
+    font-size: 0.88em;
+    line-height: 1.4;
+}
+
+/* When our NP shipping method is active — hide standard WC fields that our plugin replaces */
+body.uads-np-active #billing_country_field,
+body.uads-np-active #billing_state_field,
+body.uads-np-active #billing_postcode_field,
+body.uads-np-active #billing_address_1_field,
+body.uads-np-active #billing_address_2_field,
+body.uads-np-active #billing_city_field,
+body.uads-np-active #billing_phone_field,
+body.uads-np-active #shipping_state_field,
+body.uads-np-active #shipping_postcode_field,
+body.uads-np-active #shipping_address_1_field,
+body.uads-np-active #shipping_address_2_field,
+body.uads-np-active #shipping_city_field {
+    display: none !important;
+}

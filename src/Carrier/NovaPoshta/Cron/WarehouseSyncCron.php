@@ -209,10 +209,6 @@ final class WarehouseSyncCron
             } while ($count >= self::PAGE_SIZE);
 
             $processed++;
-            if ($processed % 200 === 0) {
-                self::set_status(['cities_processed' => $processed, 'warehouses_synced' => $warehouses_total]);
-                self::tg_progress("⏳ Sync: $processed / $cities_total cities | $warehouses_total warehouses");
-            }
         }
 
         self::set_status(['cities_processed' => $processed, 'warehouses_synced' => $warehouses_total]);

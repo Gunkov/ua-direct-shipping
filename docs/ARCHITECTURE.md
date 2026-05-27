@@ -189,7 +189,7 @@ ua-direct-shipping/
 **Зовнішні API:**
 - `api.novaposhta.ua/v2.0/json/` — основні методи
 - `my.novaposhta.ua/orders/print*` — PDF marking download (через PdfProxyController)
-- `api.telegram.org/bot/sendMessage` — TG прогрес під час sync (опційно, hardcoded credentials)
+- `api.telegram.org/bot/sendMessage` — TG сповіщення про старт/фініш синхронізації (опційно, hardcoded credentials)
 
 ## Roadmap
 

@@ -80,7 +80,7 @@ WP-admin → **WooCommerce → UA Direct Shipping**.
 1. Натисни **🔄 Оновити довідники Нової Пошти**
 2. Підтвердь у dialog'у
 3. Сторінку можна закрити — sync йде у фоні **~30-60 хвилин**
-4. Прогрес у Telegram (якщо налаштовано) або в `WC → Status → Logs → ua-direct-shipping`
+4. Сповіщення про початок і завершення у Telegram (якщо налаштовано) або в `WC → Status → Logs → ua-direct-shipping`
 
 Після завершення:
 - `Cities: ~10 977 · Warehouses: ~25 000` — готово
